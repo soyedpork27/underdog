@@ -1,0 +1,100 @@
+.warning_txt {
+  color : #f00;
+  font-size : 14px;
+}
+
+.form_section{
+  width : 60%;
+  min-width : 375px;
+  box-sizing : border-box;
+  padding : 16px;
+  margin : 40px auto 0 auto;
+}
+
+.form_title{
+  text-align : center;
+  margin-bottom : 40px;
+}
+
+.form_msg{
+  font-size : 14px;
+  text-align : center;
+  margin : 16px 0;
+}
+
+.user_form{
+  display : block;
+  max-width : 600px;
+  margin : 0 auto;
+  box-sizing : border-box;
+  padding : 50px 0 80px 0;
+  position : relative;
+}
+
+.form_input_box{
+  position : relative;
+  height : 60px;
+  margin-bottom : 32px;
+  display : flex;
+  max-width : calc(100% - 16px);
+  justify-content: space-between;
+}
+
+.form_input_box label {
+  display : block;
+  width : 40%;
+  text-align : center;
+  font-size : 18px;
+  font-weight: bold;
+  line-height : 40px;
+}
+
+.form_input_box input {
+  border : none;
+  border-bottom : 2px solid #fff;
+  width : 60%;
+  min-width : 220px;
+  height : 40px;
+  text-indent : 8px;
+  font-size : 16px;
+  background-color : #000;
+}
+
+.form_warning_txt {
+  color : #f00;
+  position : absolute;
+  font-size : 14px;
+  height : 20px;
+
+  top : 48px;
+  left : 40%;
+}
+
+.form_clear_txt {
+  color : #00f;
+  position : absolute;
+  font-size : 14px;
+  height : 20px;
+
+  top : 48px;
+  left : 40%;
+}
+
+.user_form_btn{
+  display : block;
+
+  width : 160px;
+  height : 40px;
+  border : none;
+
+  font-size : 16px;
+  font-weight : bold;
+  color : #000;
+  background-color : #fff;
+  cursor : pointer;
+
+  position : absolute;
+  bottom : 20px;
+  left : 50%;
+  transform : translateX(-50%);
+}
