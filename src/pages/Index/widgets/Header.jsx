@@ -43,7 +43,7 @@ function Header(props) {
 
         <nav className='GNB_wrap'>
           <ul className='GNB'>
-            {GNB.map((item)=>(<li className='GNB_list'><Link to={`${item.path}`}>
+            {GNB.map((item,idx)=>(<li key={idx} className='GNB_list'><Link to={`${item.path}`}>
               <span className={`GNB_icon `}>
                 {item.icon}
               </span>
