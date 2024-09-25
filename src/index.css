@@ -56,11 +56,15 @@ body {
   overflow-y : hidden;
 }
 
-main {
+.main_default {
   width : 100%;
   height : calc(100% - 100px);
   margin-top : 40px;
   overflow-y : auto;
+
+  padding : 12px;
+
+  transition : .2s;
 }
 
 
