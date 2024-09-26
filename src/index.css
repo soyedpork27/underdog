@@ -6,7 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color : #000;
+  background-color : #121212;
+  /* background-color : #1E2024; */
   color : #fff;
 }
 
@@ -84,5 +85,23 @@ body {
 
 /* 스크롤바 배경 스타일링 */
 ::-webkit-scrollbar-track {
-  background: #181818;
+  background: #121212;
+  /* background: #1E2024; */
+}
+
+
+.login_btn {
+  display : block;
+  width : 200px;
+  height : 36px;
+  font-size : 18px;
+  background-color : #f0f;
+  color : #fff;
+}
+
+
+.link_text{
+  font-size : 14px;
+  color : rgb(0, 242, 255);
+  text-decoration : underline;
 }

@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 
 import './css/userform.css';
+import { CenterPageTitle } from '../../styles/textStyles';
+import { MainBlockBtn } from '../../styles/btnStyles';
 
 function Login(props) {
 
@@ -30,7 +32,9 @@ function Login(props) {
 
   return (
     <section className='form_section'>
-      <h2 className='form_title'>로그인</h2>
+
+      <CenterPageTitle>로그인</CenterPageTitle>
+
       <form className='user_form' onSubmit={handleSubmit}>
 
         <div className='form_input_box'>
@@ -43,7 +47,7 @@ function Login(props) {
           <input type="password" id='pw' name='pw' autoComplete='off' value={data.pw} onChange={handleChange} placeholder='비밀번호' />
         </div>
 
-        <button type='submit' className='user_form_btn'>로그인</button>
+        <MainBlockBtn type='submit'>로그인</MainBlockBtn>
 
       </form>
       

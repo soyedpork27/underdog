@@ -10,6 +10,8 @@ import Login from '../Auth/Login';
 
 function Router(props) {
 
+  
+
   const router = createBrowserRouter([{
       path : '/',
       element : <Index />,
@@ -29,6 +31,10 @@ function Router(props) {
       {
         path : "/mypage",
         element : <MyPage />
+      },
+      {
+        path : '/mypage/login',
+        element : <Login />
       },
       {
         path : '*',

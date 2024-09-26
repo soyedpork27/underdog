@@ -1,9 +1,10 @@
 import React from 'react';
+import { LeftPageTitle } from '../../styles/textStyles';
 
 function Exercise(props) {
   return (
     <>
-      <h2>운동</h2>
+      <LeftPageTitle>운동</LeftPageTitle>
       
 
       <h2>dasd</h2>

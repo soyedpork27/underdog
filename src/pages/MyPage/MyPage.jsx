@@ -1,9 +1,10 @@
 import React from 'react';
+import { LeftPageTitle } from '../../styles/textStyles';
 
 function MyPage(props) {
   return (
     <>
-      <h2>마이페이지</h2>
+      <LeftPageTitle>마이페이지</LeftPageTitle>
       
     </>
   );

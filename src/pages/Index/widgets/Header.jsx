@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 import '../../../css/header.css';
@@ -13,6 +13,10 @@ import { IoPerson } from "react-icons/io5";
 
 function Header(props) {
 
+  // GNB 요소 선택 시 서식 적용을 위한 pathname
+  const pathname = useLocation().pathname.slice(1).split('/')[0];
+
+  // GNB 요소 배열 리스트
   const GNB = [
     {
       text : "홈",
@@ -34,16 +38,15 @@ function Header(props) {
       path : "/mypage",
       icon : <IoPerson />
     }
-  ]
+  ];
 
   return (
     <>
       <header>
 
-
         <nav className='GNB_wrap'>
           <ul className='GNB'>
-            {GNB.map((item,idx)=>(<li key={idx} className='GNB_list'><Link to={`${item.path}`}>
+            {GNB.map((item,idx)=>(<li key={idx} className={`GNB_list ${item.path.slice(1)===pathname?'on':''}`}><Link to={`${item.path}`}>
               <span className={`GNB_icon `}>
                 {item.icon}
               </span>

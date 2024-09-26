@@ -1,9 +1,10 @@
 import React from 'react';
+import { LeftPageTitle } from '../../styles/textStyles';
 
 function Routine(props) {
   return (
     <>
-      <h2>루틴</h2>
+      <LeftPageTitle>루틴</LeftPageTitle>
     </>
   );
 }
