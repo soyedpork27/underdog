@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
 import './css/userform.css';
+import { CenterPageTitle } from '../../styles/textStyles';
 
 
 function Register(props) {
@@ -49,7 +50,10 @@ function Register(props) {
 
   return (
     <section className='form_section'>
-      <h2 className='form_title'>회원가입</h2>
+      {/* <h2 className='form_title'>회원가입</h2> */}
+
+      <CenterPageTitle>회원가입</CenterPageTitle>
+
       <p className='form_msg'><span className='warning_txt'>*</span> 표시는 필수 입력 항목입니다.</p>
       <form className='user_form' onSubmit={handleSubmit}>
 
