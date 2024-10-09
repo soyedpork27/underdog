@@ -26,7 +26,7 @@ function DogCalendar(props) {
 
   const [activeStartDate, setActiveStartDate] = useState(new Date());
 
-  const [exerciseDays, setExerciseDays] = useState(['2024-09-27', '2024-09-21', '2024-09-08', '2024-09-22', '2024-09-29']); // 운동한 날짜 배열
+  const exerciseDays = ['2024-09-27', '2024-09-21', '2024-09-08', '2024-09-22', '2024-09-29']; // 운동한 날짜 배열
 
   const tileContent = ({ date, view }) => {
     // 일 단위 보기에서만 표시

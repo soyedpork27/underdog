@@ -1,7 +1,7 @@
 import { RoundBoxArt } from "./RoundBox";
 
 
-import { CenterDesc16, CenterTitle3, CenterWeakDesc14, LeftTitle3 } from "./textStyles";
+import { CenterDesc16, CenterTitle3, CenterWeakDesc14 } from "./textStyles";
 import { LoginLink } from "./btnStyles";
 
 import { PiDotsThreeCircle } from "react-icons/pi";
