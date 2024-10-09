@@ -9,6 +9,9 @@ import { FaListCheck } from "react-icons/fa6";
 import { PiBarbellFill } from "react-icons/pi";
 import { IoPerson } from "react-icons/io5";
 
+// 소셜 아이콘
+// import { GrGroup } from "react-icons/gr";
+
 
 
 function Header(props) {

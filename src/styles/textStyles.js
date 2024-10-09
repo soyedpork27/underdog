@@ -21,13 +21,13 @@ export const colors = {
 
 // 페이지별 제목 왼쪽 텍스트
 export const LeftPageTitle = styled.h2`
-  font-size : 22px;
+  font-size : 1.571rem;
   margin-bottom : 16px;
 `;
 
 // 페이지별 제목 중앙 텍스트
 export const CenterPageTitle = styled.h2`
-  font-size : 22px;
+  font-size : 1.571rem;
   text-align : center;
   margin-bottom : 16px;
 `;
@@ -35,26 +35,26 @@ export const CenterPageTitle = styled.h2`
 // 가운데 정렬 h3 태그
 export const CenterTitle3 = styled.h3`
   text-align : center;
-  font-size : 18px;
+  font-size : 1.286rem;
   margin-bottom : 12px;
 `;
 
 // 왼쪽 정렬 h3 태그
 export const LeftTitle3 = styled.h3`
-  font-size : 18px;
+  font-size : 1.286rem;
   margin-bottom : 12px;
 `;
 
 // 가운데 정렬 h4 태그
 export const CenterTitle4 = styled.h4`
   text-align : center;
-  font-size : 16px;
+  font-size : 1.143rem;
   margin-bottom : 12px;
 `;
 
 // 왼쪽 정렬 h4 태그
 export const LeftTitle4 = styled.h4`
-  font-size : 16px;
+  font-size : 1.143rem;
   margin-bottom : 12px;
 `;
 
@@ -63,20 +63,20 @@ export const LeftTitle4 = styled.h4`
 
 // 가운데 정렬 서술 텍스트
 export const CenterDesc16 = styled.p`
-  font-size : 16px;
+  font-size : 1.143rem;
   text-align : center;
   margin-bottom : 8px;
 `;
 
 // 왼쪽 정렬 서술 텍스트
 export const LeftDesc16 = styled.p`
-  font-size : 16px;
+  font-size : 1.143rem;
   margin-bottom : 8px;
 `;
 
 // 가운데 정렬 서술 텍스트
 export const CenterDesc14 = styled.p`
-  font-size : 14px;
+  font-size : 1rem;
   text-align : center;
   margin-bottom : 8px;
 `;
@@ -84,13 +84,13 @@ export const CenterDesc14 = styled.p`
 
 // 왼쪽 정렬 서술 텍스트
 export const LeftDesc14 = styled.p`
-  font-size : 14px;
+  font-size : 1rem;
   margin-bottom : 8px;
 `;
 
 // 흐린 글자 중앙
 export const CenterWeakDesc14 = styled.p`
-  font-size : 14px;
+  font-size : 1rem;
   text-align : center;
   margin-bottom : 8px;
   color : ${colors.weakColor}
@@ -98,7 +98,7 @@ export const CenterWeakDesc14 = styled.p`
 
 // 흐린 글자 왼쪽
 export const LeftWeakDesc14 = styled.p`
-  font-size : 14px;
+  font-size : 1rem;
   margin-bottom : 8px;
   color : ${colors.weakColor}
 `;
@@ -106,14 +106,23 @@ export const LeftWeakDesc14 = styled.p`
 // --- 부가 설명, 키워드 텍스트 ---
 
 export const SubText14 = styled.span`
-  font-size : 14px;
+  font-size : 1rem;
   color : ${colors.weakColor};
 `;
 
 export const SubText12 = styled.span`
-  font-size : 12px;
+  font-size : 0.857rem;
   color : ${colors.weakColor};
 `;
 
 // --- 인포 및 경고 ---
 
+
+
+// -- 강조 --
+
+export const BigText28 = styled.p`
+  font-size : 2rem;
+  font-weight : bold;
+  text-align : center;
+`;

@@ -1,6 +1,11 @@
 import React from 'react';
+
+
 import { RoutineBox } from '../../styles/RoutineBox';
 import { LeftPageTitle  } from '../../styles/textStyles';
+import DogCalendar from './widgets/DogCalendar';
+
+import DashBoard from './widgets/DashBoard';
 
 
 function Home(props) {
@@ -9,7 +14,13 @@ function Home(props) {
 
   return (
     <>
-      <LeftPageTitle>홈 화면</LeftPageTitle>
+      <LeftPageTitle className='hide'>홈 화면</LeftPageTitle>
+
+      <DashBoard />
+
+
+      <DogCalendar />
+
 
       <RoutineBox isAuth={isAuth} />
     </>

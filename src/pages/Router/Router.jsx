@@ -7,6 +7,7 @@ import NotFound from '../NotFound/NotFound';
 import Exercise from '../Exercise/Exercise';
 import MyPage from '../MyPage/MyPage';
 import Login from '../Auth/Login';
+import Register from '../Auth/Register';
 
 function Router(props) {
 
@@ -35,6 +36,10 @@ function Router(props) {
       {
         path : '/mypage/login',
         element : <Login />
+      },
+      {
+        path : '/mypage/register',
+        element : <Register />
       },
       {
         path : '*',

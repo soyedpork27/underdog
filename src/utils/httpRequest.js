@@ -7,4 +7,3 @@ export const httpRequest = axios.create({
     "Content-Type" : "application/json"
   }
 });
-
