@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import './css/userform.css';
 import { CenterPageTitle } from '../../styles/textStyles';
 import { MainBlockBtn } from '../../styles/btnStyles';
+import { Link } from 'react-router-dom';
 
 function Login(props) {
 
@@ -48,6 +49,8 @@ function Login(props) {
         </div>
 
         <MainBlockBtn type='submit'>로그인</MainBlockBtn>
+
+        <p>계정이 없다면? <Link to='/mypage/register'>회원가입</Link></p>
 
       </form>
       

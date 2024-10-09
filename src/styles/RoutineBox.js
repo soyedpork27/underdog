@@ -1,4 +1,4 @@
-import { RoundBoxBg } from "./RoundBox";
+import { RoundBoxArt } from "./RoundBox";
 
 
 import { CenterDesc16, CenterTitle3, CenterWeakDesc14, LeftTitle3 } from "./textStyles";
@@ -13,7 +13,7 @@ import { Margin16 } from "./etcStyles";
 export function RoutineBox({isAuth}){
 
   return (
-    <RoundBoxBg>
+    <RoundBoxArt>
       <CenterTitle3>내 루틴</CenterTitle3>
       <Margin16 />
       {
@@ -30,6 +30,6 @@ export function RoutineBox({isAuth}){
           <LoginLink text='로그인 하기' />
         </>
       }
-    </RoundBoxBg>
+    </RoundBoxArt>
   )
 };
