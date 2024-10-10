@@ -20,6 +20,10 @@ function Main(props) {
 
       const getScrollTop = parseInt(mainRef.current.scrollTop);
 
+      if(getScrollTop===0){
+        handleTopView(true);
+      }
+
       if(scrollRef.current===getScrollTop){
         return ;
       }
