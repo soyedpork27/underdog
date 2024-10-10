@@ -20,6 +20,11 @@ function Main(props) {
 
       const getScrollTop = parseInt(mainRef.current.scrollTop);
 
+      // 모바일 환경에서 최상단으로 스크롤될 경우 버그 수정을 위한 조건문 
+      if(getScrollTop===0){
+        handleTopView(true);
+      }
+
       if(scrollRef.current===getScrollTop){
         return ;
       }
