@@ -23,6 +23,7 @@ function Main(props) {
       // 모바일 환경에서 최상단으로 스크롤될 경우 버그 수정을 위한 조건문 
       if(getScrollTop===0){
         handleTopView(true);
+        return;
       }
 
       if(scrollRef.current===getScrollTop){
