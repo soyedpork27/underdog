@@ -20,7 +20,11 @@ function Main(props) {
 
       const getScrollTop = parseInt(mainRef.current.scrollTop);
 
-      // 모바일 환경에서 최상단으로 스크롤될 경우 버그 수정을 위한 조건문 
+      
+      const clientHeight = mainRef.current.clientHeight;
+      const scrollHeight = mainRef.current.scrollHeight;
+
+      // 모바일 환경에서 최상단으로 스크롤 될 경우 버그 수정을 위한 조건문 
       if(getScrollTop===0){
         handleTopView(true);
         return;
@@ -28,6 +32,12 @@ function Main(props) {
 
       if(scrollRef.current===getScrollTop){
         return ;
+      }
+
+      // 최하단으로 스크롤 될 경우 버그 수정
+      if (getScrollTop + clientHeight >= scrollHeight) {
+        handleTopView(false);
+        return;
       }
 
 
